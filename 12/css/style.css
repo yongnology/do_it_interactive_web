@@ -95,3 +95,47 @@ figure section article.on .inner {
 	opacity: 0.9;
 	transform: scale(1.1);
 }
+figure section article .inner .pic {
+	width: 15vw;
+	height: 15vw;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: 200%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+figure section article .inner .pic::before,
+figure section article .inner .pic::after {
+	content: "";
+	display: block;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: inherit; /* 부모 요소 .pic 으로부터 이미지 상속*/
+	background-position: center;
+	background-repeat: inherit;
+	background-size: cover;
+	transform-origin: center center;
+}
+figure section article .inner .pic::before {
+	transform: translate(10%);
+	filter: blur(20px) brightness(1.6); /* 이미지를 블러 처리하고 밝게 적용*/
+}
+figure section article .inner .pic .dot {
+	width: 3vw;
+	height: 3vw;
+	border-radius: 50%;
+	background: #e4f1ff;
+	z-index: 3;
+	box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
+	 /* insert으로 안쪽 그림자 생성 */
+}
+.pic {
+	background-image: url(../img/member1.jpg);
+}
