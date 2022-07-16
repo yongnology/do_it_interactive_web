@@ -64,10 +64,9 @@ figure section {	/* 음악 플레이어 패널 프레임 그룹 */
 	height: 65vh;
 	position: absolute;
 	left: 50%;
-	top: 50%;
-	margin-top: -32vh;
+	top: 140%; 	/* 세로 위치값 조절 */
+	margin-top: -25vh; /* 세로 위치값 조절 */
 	margin-left: -10vw;
-	border: 1px solid aqua;
 }
 figure section article { /* 개별 음악 플레이어 패널 */
 	width: 100%;
