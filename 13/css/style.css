@@ -25,6 +25,34 @@ header {
 	top: 0px;
 	left: 0px;
 }
+header h1 {
+	font: bold 50px/1 'orbitron';
+	color: #fff;
+	letter-spacing: 1px;
+	position: absolute;
+	left: 50px;
+	top: 50%;
+	transform: translateY(-150%);
+}
+header h1::before {
+	content: 'UI/UX DEVELOPMENT';
+	display: block;
+	font: 14px/1 "oribitron";
+	color: #fff;
+	letter-spacing: 2px;
+	position: absolute;
+	left: 0px;
+	top: 140px;
+	opacity: 0.8;
+}
+header h1:after {	/* 밑줄(가로 막대) */
+	content: '';
+	display: block;
+	width: 150px;
+	height: 2px;
+	background: #fff;
+	margin-top: 20px;
+}
 main {
 	margin-left: 400px; /* 너비값 없이 왼쪽 여백만 추가 */
 	box-sizing: border-box;
