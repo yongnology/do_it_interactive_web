@@ -53,6 +53,28 @@ header h1:after {	/* 밑줄(가로 막대) */
 	background: #fff;
 	margin-top: 20px;
 }
+/* SNS 아이콘 ----------- 시작 */
+header ul {
+	position: absolute;
+	left: 40px;
+	bottom: 100px;
+}
+header ul li {
+	float: left;
+	margin-right: 10px;
+}
+header ul li a {
+	font-size: 20px;
+	color: #fff;
+}
+header ul li a span {
+	display: inline-block;
+	font-weight: bold;
+	opacity: 0.7;
+	transform: scale(0.7) translateX(-10px); /* 70% 축소하고 왼쪽으로 -10px만큼 이동 */
+}
+/* SNS 아이콘 ----------- 종료 */
+
 main {
 	margin-left: 400px; /* 너비값 없이 왼쪽 여백만 추가 */
 	box-sizing: border-box;
