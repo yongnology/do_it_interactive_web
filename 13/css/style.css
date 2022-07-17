@@ -122,3 +122,86 @@ main section article div p {
 }
 /* main section ----- 종료*/
 /* main ------------------------------------------------------ 종료 */
+
+/* 미디어 쿼리 사용하여 반응형 웹 만들기 ----- 시작 */
+
+/* 브라우저 폭이 1600px 미만일 때*/
+@media screen and (max-width:1599px) {
+	header {
+		width: 350px;
+	}
+	main {
+		margin-left: 350px;
+	}
+	main section article {
+		width: 25%;	/* 가로로 4개를 배치 */
+	}
+}
+
+/* 브라우저 폭이 1200px 미만일 때 */
+@media screen and (max-width:1199px) {
+	header {
+		width: 100%;
+		height: 80px;
+		position: relative;
+	}
+	header h1 {
+		font: bold 24px/1 'oribitron';
+		transform: translateY(-50%);
+	}
+	header h1::before, header h1::after {
+		display: none;
+	}
+	header ul {
+		left: 83%;
+		bottom: 25px;
+	}
+	header ul li {
+		margin-right: 20px;
+	}
+	header ul li a {
+		font-size: 20px;
+	}
+	header ul li a span {
+		display: none;
+	}
+	main {
+		width: 100%;
+		margin-left: 10px;	/* 임의 추가 */
+	}
+	main section article {
+		width: 25%;
+	}
+	
+}
+
+/* 브라우저 폭이 900px 미만일 때 */
+@media screen and (max-width: 899px) {
+	header ul {
+		left: 80%;
+	}
+	main section article {
+		width: 33.33%;
+	}
+}
+
+/* 브라우저 폭이 680px 미만일 때 */
+@media screen and (max-width:679px) {
+	header ul {
+		left: 70%;
+	}
+	main section article {
+		width: 50%;
+	}
+}
+
+/* 브라우저 폭이 540px 미만일 때에는 article을 가로로 1개씩 배치되도록 변경 */
+@media screen and (max-width:539px) {
+	header ul {
+		display: none;
+	}
+	main section article {
+		width: 100%;
+	}
+}
+/* 미디어 쿼리 사용하여 반응형 웹 만들기 ----- 종료 */
